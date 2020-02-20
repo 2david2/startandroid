@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -25,35 +26,9 @@
         }
    p.exserif { font-family: "Times New Roman", Times, serif; }
       p.exsansserif { font-family: Arial, Helvetica, sans-serif; }
-        .STARTANDROID{
-            color:white;
-            height: 35px;
-            width: 155px;
-
-        }
-        .STARTANDROID1{
-            margin-bottom: 20px;
-            background-color: dodgerblue;
-            display: inline-block;
-        }
-        .div1{
-          background-color: deepskyblue;
-            height: 55px;
-
-        }
-        .div{
-
-            color:white;
-            margin-left: 25px;
-            display: inline-block;
-        }
-        .div2{
-            margin-top: 10px;
-            margin-left: 5px;
-            width: 10px;
-            height: 10px;
-            display: inline-block;
-        }
+.background-color{
+    background-color:deepskyblue ;
+}
         .language{
             height: 25px;
             width: auto;
@@ -64,11 +39,16 @@
           color:white;
           border-color: deepskyblue;
            font-weight: bold;
+              display: inline-block;
           }
 
 
         img{
             height:500px;
+            width: auto;
+        }
+        .searchimg{
+            height: 10px;
             width: auto;
         }
 .borderElement {
@@ -112,33 +92,80 @@ margin-left: 20px;
     </style>
 </head>
 <body>
- <header>
-<center>
-<div></div>
+<nav class="navbar navbar-expand-lg navbar-light background-color">
+  <a class="navbar-brand" href="#">STARTANDROID</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
 
+      <li class="nav-item">
+        <a class="nav-link" href="#">Главное</a>
+      </li>
+           <li class="nav-item">
+        <a class="nav-link" href="#">Новости</a>
+      </li>
+      <li class="nav-item dropdown">
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Уроки
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Полный список</a>
+    <a class="dropdown-item" href="#">Первые 100 уроков в PDF</a>
+  </div>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Блог</a>
+      </li>
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Курсы
+  </a>
 
-
-
-
-    <div class="div1" >
-    <div class="STARTANDROID1" >
-        <div class="STARTANDROID">STARTANDROID</div>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Все курсы</a>
+    <a class="dropdown-item" href="#">Dagger2</a>
+    <a class="dropdown-item" href="#">RxJava</a>
+    <a class="dropdown-item" href="#">Тестирование</a>
+    <a class="dropdown-item" href="#">Architecture Components</a>
+    <a class="dropdown-item" href="#">Производительность</a>
+    <a class="dropdown-item" href="#">Kotlin</a>
 </div>
-<button class="button">Главное</button>
-<button class="button">Новости</button>
-<button class="button">Уроки</button>
-<button class="button">Блог</button>
-<button class="button">Курсы</button>
-<button class="button">Инфо</button>
-<button class="button">Чаты</button>
-<button class="button">Войти</button>
-<input class="" type="search">
-<div class="div2"><img class="div2" src="lupa.jpg"></div>
 </div>
+           <li class="nav-item">
+        <a class="nav-link" href="#">Чаты</a>
+      </li>
+        <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Инфо
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Контакты</a>
+    <a class="dropdown-item" href="#">О сайте</a>
+    <a class="dropdown-item" href="#">Об авторе</a>
+    <a class="dropdown-item" href="#">Реклама</a>
+</div>
+</div>
+
+         <li class="nav-item">
+        <a class="nav-link" href="#">Войти</a>
+      </li>
+
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button ><img class="searchimg" src="lupa.jpg"></button>
+    </form>
+  </div>
+</nav>
  </center>
 </header>
-
 
 
 
@@ -161,13 +188,14 @@ margin-left: 20px;
   </div>
   </div>
     </div>
-
+</div>
+<center>
     <div class="row">
         <div class="col">
         <center>
-<div class="place">
-    <h2 >Start Android - учебник по Android для начинающих и</h2>
-    <h2 >продвинутых</h2>
+<div >
+    <h2 >Start Android - учебник по Android для </h2>
+    <h2 >начинающих и продвинутых</h2>
 
   <p>Присоединяйтесь к нам в  <a href="https://startandroid.ru/ru/chats.html">Telegram чатах</a> по различным тематикам</p>
    </br>
@@ -241,5 +269,9 @@ margin-left: 20px;
 </br>
     <h3>Bootstrap is a front-end framework of Twitter, Inc. Code licensed under MIT License.</h3>
     <h3>Font Awesome font licensed under SIL OFL 1.1.</h3>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
