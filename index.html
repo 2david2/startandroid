@@ -51,24 +51,10 @@
             height: 10px;
             width: auto;
         }
-.borderElement {
-  background-color: deepskyblue;
-  border: 6px solid deepskyblue;
-  border-radius: 5px;
-margin-left: 250px;
-    color:white;
+
+.dropdown-toggle{
+    background-color: #0caeff;
 }
-.borderElement1 {
-  background-color: deepskyblue;
-  border: 6px solid deepskyblue;
-  border-radius: 5px;
-margin-left: 20px;
-    color:white;
-}
-        .place{
-            width: auto;
-            height: auto;
-        }
 
 
         .imgg {
@@ -77,7 +63,7 @@ margin-left: 20px;
             height:auto;
    }
         .set{
-            margin-left: 250px;
+            margin-left: 50px;
 
         }
         .container{
@@ -88,6 +74,9 @@ margin-left: 20px;
         }
         .col-sm{
 
+        }
+        .size{
+            width: 870px;
         }
     </style>
 </head>
@@ -111,12 +100,16 @@ margin-left: 20px;
       <li class="nav-item dropdown">
 <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
     Уроки
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <a class="dropdown-item" href="#">Полный список</a>
     <a class="dropdown-item" href="#">Первые 100 уроков в PDF</a>
   </div>
+
+
     <li class="nav-item">
         <a class="nav-link" href="#">Блог</a>
       </li>
@@ -166,109 +159,113 @@ margin-left: 20px;
 </nav>
  </center>
 </header>
+    <div class="container">
+        <div class="row">
+            <br class="col">
+            <div class="col-sm">
+              <h1>Language</h1>
+            <!--</div>-->
+            <!--<div class="col-sm">-->
+                <img class="language" src="russian.jpg">
+                <img  class="language" src="english.jpg">
+            <!--</div>-->
+
+            <!--<div class="col-sm">-->
+                <img  class="imgg" src="startandroid.jpg"></br>
+                <!--<div class="col-sm">-->
+                    <h2>Поддержка проекта</h2>
+                    <h4>Яндекс</h4>
+                    <h3>410011180491924</h3>
+                    <h4>WebMoney</h4>
+                    <h3>R248743991365</h3>
+                    <h3>Z551306702056</h3>
+                    <h2>Paypal</h2>
+                <!--</div>-->
+            </div>
+            <center>
+            <div class="row">
+                <div  class="col">
+                    <div class="size" >
+                        <h2 class="set">Start Android - учебник по Android для начинающих и продвинутых</h2>
+                        <p class="set">Присоединяйтесь к нам в  <a href="https://startandroid.ru/ru/chats.html">Telegram чатах</a> по различным тематикам</p>
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set"> Уроки по Android </h2>
+                        </div>
+                        <p class="set" >Если Вы новичок, то начните обучение с уроков. Они помогут Вам изучить Android с нуля до среднего уровня.</p>
+
+                        <a href="https://startandroid.ru/ru/uroki/vse-uroki-spiskom.html"><button class="btn btn-primary btn-lg">Начать обучение</button></a>
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set">Блог </h2>
+                        </div>
+                        <p class="set" >В блоге собраны материалы о различных SDK, API, библиотеках, паттернах и просто интересных кейсах.</p>
+
+                        <a href="https://startandroid.ru/ru/blog.html"><button class="btn btn-primary btn-lg">Перейти в блог</button></a>
+
+                        </br>
+                        </br>
+                        </br>
+                        <p class="set">Продвинутым разработчикам будут интересны курсы, в которых подробно рассмотрены полезные и востребованные технологии и библиотеки.</p>
 
 
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set" >Architecture Components</h2>
+                        </div>
+                        <p class="set" >Набор механизмов от Google для построения архитектуры приложения.</p>
+
+                        <a href="https://startandroid.ru/ru/courses/architecture-components.html"><button class="btn btn-primary btn-lg">Пройти курс</button></a>
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set" >Тестирование </h2>
+                        </div>
+                        <p class="set">Полезный инструмент для каждого Androi разработчика. Избавьтесь от ошибок в ваших приложениях.</p>
 
 
-<div class="container">
-    <div class="row">
-  <div class="col">
-    <div class="col-sm">
-      <h1>Language</h1>
+                        <a href="https://startandroid.ru/ru/courses/testing.html"><button class="btn btn-primary btn-lg">Пройти курс</button></a>
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set" >Dagger 2 </h2>
+                        </div>
+                        <p class="set" >Отличный помощник в реализации паттерна Dependency Injection.Поможет сделать ваш код чистым и снизить зависимости между объектами.  </p>
+                        <p class="set"></p>
+                        <a href="https://startandroid.ru/ru/courses/dagger-2.html"><button class="btn btn-primary btn-lg">Пройти курс</button></a>
+                        </br>
+                        </br>
+                        </br>
+                        <div>
+                            <h2 class="set">RxJava</h2>
+                        </div>
+                        <p class="set">Мощный и гибкий инструмент для удобной реализации повседневных задач</p>
+                        <a href="https://startandroid.ru/ru/courses/rxjava.html"><button class="btn btn-primary btn-lg">Пройти курс</button></a>
+                    </div>
+                </div>
+             </div>
+            </center>
+        </div>
     </div>
-    <div class="col-sm">
-    <img class="language" src="russian.jpg">
-    <img  class="language" src="english.jpg">
-    </div>
-    <div class="col-sm">
-      <img  class="imgg" src="startandroid.jpg">
-        <div class="col-sm">
 
-    </div>
+
+</br>
+  <div class="card-footer text-muted">
+            <h3>© Start Android, 2011-2020. Все права защищены, копирование материалов возможно только с разрешения автора </h3>
+        <h3>При возникновении каких-либо вопросов, используйте форму обратной связи</h3>
+    </br>
+        <h3>Bootstrap is a front-end framework of Twitter, Inc. Code licensed under MIT License.</h3>
+        <h3>Font Awesome font licensed under SIL OFL 1.1.</h3>
   </div>
-  </div>
-    </div>
-</div>
-<center>
-    <div class="row">
-        <div class="col">
-        <center>
-<div >
-    <h2 >Start Android - учебник по Android для </h2>
-    <h2 >начинающих и продвинутых</h2>
 
-  <p>Присоединяйтесь к нам в  <a href="https://startandroid.ru/ru/chats.html">Telegram чатах</a> по различным тематикам</p>
-   </br>
-</br>
-    </br>
-<div>
-        <h2 >Уроки по Android </h2>
-</div>
-    <p class="set" >Если Вы новичок, то начните обучение с уроков.</p>
-    <p class="set"> Они помогут Вам изучить Android с нуля до среднего уровня.</p>
-<a href="https://startandroid.ru/ru/uroki/vse-uroki-spiskom.html"><button class="borderElement1">Начать обучение</button></a>
-    </br>
-</br>
-    </br>
-<div>
-        <h2 class="set">Блог </h2>
-</div>
-    <p class="set" >В блоге собраны материалы о различных SDK, API, .</p>
-    <p class="set" >библиотеках, паттернах и просто интересных кейсах</p>
- <a href="https://startandroid.ru/ru/blog.html"><button class="borderElement">Перейти в блог</button></a>
-
-</br>
-    </br>
-    </br>
-     <p class="set">Продвинутым разработчикам будут интересны курсы, </p>
-    <p class="set"> в которых подробно рассмотрены полезные </p>
-    <p class="set">и востребованные технологии и библиотеки.</p>
-    </br>
-</br>
-    </br>
-<div>
-        <h2 class="set" >Architecture Components</h2>
-</div>
-    <p class="set" >Набор механизмов от Google для построения </p>
-    <p class="set">архитектуры приложения.</p>
-    <a href="https://startandroid.ru/ru/courses/architecture-components.html"><button class="borderElement">Пройти курс</button></a>
-      </br>
-</br>
-    </br>
-<div>
-        <h2 class="set" >Тестирование </h2>
-</div>
-    <p class="set">Полезный инструмент для каждого Androi разработчика. </p>
-<p class="set"> Избавьтесь от ошибок в ваших приложениях.</p>
-
- <a href="https://startandroid.ru/ru/courses/testing.html"><button class="borderElement">Пройти курс</button></a>
-          </br>
-</br>
-    </br>
-<div>
-        <h2 class="set" >Dagger 2 </h2>
-</div>
-    <p class="set" >Отличный помощник в реализации паттерна Dependency Injection. </p>
-<p class="set">Поможет сделать ваш код чистым и снизить зависимости между объектами.</p>
- <a href="https://startandroid.ru/ru/courses/dagger-2.html"><button class="borderElement">Пройти курс</button></a>
-          </br>
-</br>
-    </br>
-<div>
-        <h2 class="set">RxJava</h2>
-</div>
-    <p class="set">Мощный и гибкий инструмент для удобной реализации повседневных задач</p>
- <a href="https://startandroid.ru/ru/courses/rxjava.html"><button class="borderElement">Пройти курс</button></a>
-</div>
-    </center>
-    </div>
-    </div>
-</div>
-    <h3>© Start Android, 2011-2020. Все права защищены, копирование материалов возможно только с разрешения автора </h3>
-    <h3>При возникновении каких-либо вопросов, используйте форму обратной связи</h3>
-</br>
-    <h3>Bootstrap is a front-end framework of Twitter, Inc. Code licensed under MIT License.</h3>
-    <h3>Font Awesome font licensed under SIL OFL 1.1.</h3>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
